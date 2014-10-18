@@ -1,0 +1,54 @@
+<div class="problem_title">Problem Overview</div>
+<div class="problem_info">
+    <div class="problem_sub_title">Critical</div>
+    <table border="0" cellpadding="0" cellspacing="0">
+<TMPL_LOOP NAME="CRITICAL">
+        <tr>
+            <td>
+                <span class="problem_server"><TMPL_VAR ESCAPE="HTML" NAME="NODENAME"> :: <TMPL_VAR ESCAPE="HTML" NAME="LABEL"></span><br />
+                <img src="<TMPL_VAR NAME="CIMGDAY">" alt="<TMPL_VAR ESCAPE="HTML" NAME="LABEL">" <TMPL_IF NAME="IMGDAYWIDTH">width="<TMPL_VAR NAME="IMGDAYWIDTH">" </TMPL_IF> <TMPL_IF NAME="IMGDAYHEIGHT">height="<TMPL_VAR NAME="IMGDAYHEIGHT">"</TMPL_IF>/>
+            </td>
+            <td>
+                <span class="problem_server"><TMPL_VAR ESCAPE="HTML" NAME="NODENAME"> :: <TMPL_VAR ESCAPE="HTML" NAME="LABEL"></span><br />
+                <img src="<TMPL_VAR NAME="CIMGWEEK">" alt="<TMPL_VAR ESCAPE="HTML" NAME="LABEL">" <TMPL_IF NAME="IMGWEEKWIDTH">width="<TMPL_VAR NAME="IMGWEEKWIDTH">" </TMPL_IF> <TMPL_IF NAME="IMGWEEKHEIGHT">height="<TMPL_VAR NAME="IMGWEEKHEIGHT">"</TMPL_IF>/>
+            </td>
+        </tr>
+</TMPL_LOOP>
+    </table>
+</div>
+
+<div class="problem_info">
+    <div class="problem_sub_title">Warning</div>
+    <table border="0" cellpadding="0" cellspacing="0">
+<TMPL_LOOP NAME="WARNING">
+        <tr>
+            <td>
+                <span class="problem_server"><TMPL_VAR ESCAPE="HTML" NAME="NODENAME"> :: <TMPL_VAR ESCAPE="HTML" NAME="LABEL"></span><br />
+                <img src="<TMPL_VAR NAME="CIMGDAY">" alt="<TMPL_VAR ESCAPE="HTML" NAME="LABEL">" <TMPL_IF NAME="IMGDAYWIDTH">width="<TMPL_VAR NAME="IMGDAYWIDTH">" </TMPL_IF> <TMPL_IF NAME="IMGDAYHEIGHT">height="<TMPL_VAR NAME="IMGDAYHEIGHT">"</TMPL_IF>/>
+            </td>
+            <td>
+                <span class="problem_server"><TMPL_VAR ESCAPE="HTML" NAME="NODENAME"> :: <TMPL_VAR ESCAPE="HTML" NAME="LABEL"></span><br />
+                <img src="<TMPL_VAR NAME="CIMGWEEK">" alt="<TMPL_VAR ESCAPE="HTML" NAME="LABEL">" <TMPL_IF NAME="IMGWEEKWIDTH">width="<TMPL_VAR NAME="IMGWEEKWIDTH">" </TMPL_IF> <TMPL_IF NAME="IMGWEEKHEIGHT">height="<TMPL_VAR NAME="IMGWEEKHEIGHT">"</TMPL_IF>/>
+            </td>
+        </tr>
+</TMPL_LOOP>
+    </table>
+</div>
+
+<div class="problem_info">
+    <div class="problem_sub_title">Unknown</div>
+    <table border="0" cellpadding="0" cellspacing="0">
+<TMPL_LOOP NAME="UNKNOWN">
+        <tr>
+            <td>
+                <span class="problem_server"><TMPL_VAR ESCAPE="HTML" NAME="NODENAME"> :: <TMPL_VAR ESCAPE="HTML" NAME="LABEL"></span><br />
+                <img src="<TMPL_VAR NAME="CIMGDAY">" alt="<TMPL_VAR ESCAPE="HTML" NAME="LABEL">" <TMPL_IF NAME="IMGDAYWIDTH">width="<TMPL_VAR NAME="IMGDAYWIDTH">" </TMPL_IF> <TMPL_IF NAME="IMGDAYHEIGHT">height="<TMPL_VAR NAME="IMGDAYHEIGHT">"</TMPL_IF>/>
+            </td>
+            <td>
+                <span class="problem_server"><TMPL_VAR ESCAPE="HTML" NAME="NODENAME"> :: <TMPL_VAR ESCAPE="HTML" NAME="LABEL"></span><br />
+                <img src="<TMPL_VAR NAME="CIMGWEEK">" alt="<TMPL_VAR ESCAPE="HTML" NAME="LABEL">" <TMPL_IF NAME="IMGWEEKWIDTH">width="<TMPL_VAR NAME="IMGWEEKWIDTH">" </TMPL_IF> <TMPL_IF NAME="IMGWEEKHEIGHT">height="<TMPL_VAR NAME="IMGWEEKHEIGHT">"</TMPL_IF>/>
+            </td>
+        </tr>
+</TMPL_LOOP>
+    </table>
+</div>

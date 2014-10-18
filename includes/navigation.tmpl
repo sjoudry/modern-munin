@@ -1,0 +1,34 @@
+        <div class="navigation" id="navigation">
+            <div class="logo">Logo</div>
+            <div class="navigation-problems"><a href="/problems.html" id="problems">Click for Problems</a></div>
+            <div class="navigation-servers" id="navigation-servers">
+                <h2>Servers</h2>
+                <ul class="group-list">
+<TMPL_LOOP NAME="ROOTGROUPS">
+                    <li class="group-visible" level="group">
+                        <TMPL_VAR NAME="NAME">
+                        <ul class="domain-list">
+    <TMPL_LOOP NAME="GROUPS">
+                            <li class="domain-visible" level="domain">
+                                <a><TMPL_VAR ESCAPE="HTML" NAME="NAME"></a>
+                                <ul class="category-list">
+        <TMPL_LOOP NAME="CATEGORIES">
+                                    <li class="category-hidden" level="category">
+                                        <a><TMPL_VAR ESCAPE="HTML" NAME="NAME"></a>
+                                        <ul class="service-list">
+            <TMPL_LOOP NAME="SERVICES">
+                                            <li class="service-hidden" level="service"><a <TMPL_IF NAME="STATE_WARNING">class="warn"</TMPL_IF> <TMPL_IF NAME="STATE_CRITICAL">class="crit"</TMPL_IF> href="<TMPL_VAR NAME="URLX">"><TMPL_VAR ESCAPE="HTML" NAME="NAME"></a></li>
+            </TMPL_LOOP>
+                                        </ul>
+                                    </li>
+        </TMPL_LOOP>
+                                </ul>
+                            </li>
+    </TMPL_LOOP>
+                        </ul>
+                    </li>
+</TMPL_LOOP>
+                </ul>
+            </div>
+        </div>
+
